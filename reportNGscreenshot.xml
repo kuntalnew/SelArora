@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<groups>
+		<run>
+			<exclude name="managing"></exclude>
+		</run>
+	</groups>
+	<listeners>
+	<listener class-name="customListener.CustListener">
+	</listener>
+
+</listeners>
+  <test name="group excluding">
+    <classes>
+      <class name="testcases.testng.Priority"/>
+      <class name="testcases.testng.SoftAssertion"/>
+      <class name="testcases.testng.Dependency"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
